@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    line-height: 1.7;
+    background: #e8ebee;
+}
+
+.navbar {
+    background: rgba(17, 24, 39, 0.95);
+}
+
+.navbar-brand {
+    letter-spacing: 0.08em;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler i {
+    color: #f8fafc;
+    font-size: 1.2rem;
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding-top: 100px;
+    background: linear-gradient(135deg, #1f2937 0%, #3b4a63 100%);
+}
+
+.hero-card {
+    border: none;
+}
+
+.hero-card .avatar {
+    width: 138px;
+    height: 138px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #475569;
+    display: grid;
+    place-items: center;
+}
+
+.hero-card .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #102a43;
+}
+
+.letter-spacing {
+    letter-spacing: 0.24em;
+    opacity: 0.8;
+}
+
+.about-image {
+    min-height: 250px;
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.08), rgba(55, 65, 81, 0.08));
+    overflow: hidden;
+}
+
+.feature-card, .skill-card, .project-card, .contact-form {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background: #ffffff;
+}
+
+.feature-card:hover, .skill-card:hover, .project-card:hover, .contact-form:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+.skill-icon, .project-icon {
+    font-size: 2.5rem;
+}
+
+.skill-icon {
+    color: #0f172a;
+}
+
+.project-preview {
+    min-height: 220px;
+}
+
+.project-card .project-icon {
+    font-size: 3rem;
+}
+
+.project-preview.bg-primary {
+    background: #0f172a;
+}
+
+.project-preview.bg-dark {
+    background: #1e293b;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.bg-light {
+    background-color: #f8fafc !important;
+}
+
+.btn-primary {
+    background-color: #0f172a;
+    border-color: #0f172a;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #1e293b;
+    border-color: #1e293b;
+}
+
+.btn-outline-light {
+    color: #f8fafc;
+    border-color: rgba(248, 250, 252, 0.85);
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    background-color: rgba(248, 250, 252, 0.1);
+    color: #f8fafc;
+}
+
+.footer {
+    background: #111827;
+}
+
+.social-links a {
+    color: #475569;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #0f172a;
+}
+
+.hero-section .lead {
+    color: #cbd5e1 !important;
+}
+
+.text-muted {
+    color: #334155 !important;
+}
+
+.hero-section h1,
+.hero-section .letter-spacing {
+    color: #f8fafc;
+}
+
+.hero-card h2,
+.hero-card p {
+    color: #334155;
+}
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section {
+        padding-top: 100px;
+    }
+}
