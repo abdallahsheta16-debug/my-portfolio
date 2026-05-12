@@ -96,19 +96,29 @@ body {
 
 .project-preview {
     min-height: 220px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.project-preview::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45));
+}
+
+.project-preview > * {
+    position: relative;
+    z-index: 1;
 }
 
 .project-card .project-icon {
     font-size: 3rem;
+    color: rgba(255, 255, 255, 0.85);
 }
 
-.project-preview.bg-primary {
-    background: #0f172a;
-}
-
-.project-preview.bg-dark {
-    background: #1e293b;
-}
 
 .contact-form label {
     font-weight: 600;
